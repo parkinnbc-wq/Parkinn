@@ -1,0 +1,20 @@
+const questions = [
+{
+question:"การละเล่นนี้คืออะไร?",
+image:"https://picsum.photos/400/250?1",
+answers:["รีรีข้าวสาร","ว่าว","มอญซ่อนผ้า","กระต่ายขาเดียว"],
+correct:0
+},
+{
+question:"เด็กในภาพกำลังเล่นอะไร?",
+image:"https://picsum.photos/400/250?2",
+answers:["งูกินหาง","ชักเย่อ","เดินกะลา","ตี่จับ"],
+correct:1
+},
+{
+question:"นี่คือการละเล่นอะไร?",
+image:"https://picsum.photos/400/250?3",
+answers:["ว่าว","รีรีข้าวสาร","มอญซ่อนผ้า","โยนห่วง"],
+correct:0
+}
+];
