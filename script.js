@@ -75,23 +75,26 @@ document.getElementById("number").innerHTML=
 
 
 
-if(answer===questions[currentQuestion].correct){
+function checkAnswer(answer){
 
-    score++;
+    if(answer===questions[currentQuestion].correct){
 
-    document.getElementById("correctSound").play();
+        score++;
 
-    alert("✅ ถูกต้อง!");
+        document.getElementById("correctSound").play();
 
-}else{
+        alert("✅ ถูกต้อง!");
 
-    wrong++;
+    }else{
 
-    document.getElementById("wrongSound").play();
+        wrong++;
 
-    alert("❌ ผิด");
+        document.getElementById("wrongSound").play();
 
-}
+        alert("❌ ผิด");
+
+    }
+
 
     currentQuestion++;
 
@@ -107,7 +110,6 @@ if(answer===questions[currentQuestion].correct){
     }
 
 }
-
 
 
 function showResult(){
