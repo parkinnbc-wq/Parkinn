@@ -79,16 +79,14 @@ function checkAnswer(answer){
 
     let sound;
 
-    if(answer===questions[currentQuestion].correct){
+    if(answer === questions[currentQuestion].correct){
 
         score++;
-
         sound = document.getElementById("correctSound");
 
     }else{
 
         wrong++;
-
         sound = document.getElementById("wrongSound");
 
     }
@@ -112,7 +110,7 @@ function checkAnswer(answer){
 
         }
 
-    },1500);
+    },2000);
 
 }
 
