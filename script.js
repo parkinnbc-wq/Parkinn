@@ -95,6 +95,7 @@ function checkAnswer(answer){
     sound.currentTime = 0;
 
     sound.play();
+    console.log(sound.src);
 
     setTimeout(function(){
 
