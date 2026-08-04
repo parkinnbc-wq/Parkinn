@@ -11,7 +11,6 @@ answers:[
 ],
 correct:0
 },  
-
 {
 question:"เด็ก ๆ กำลังเล่นการละเล่นอะไร?",
 image:"images/2.jpg",
