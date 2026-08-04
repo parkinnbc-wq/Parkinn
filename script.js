@@ -79,19 +79,22 @@ function checkAnswer(answer){
 
     if(answer===questions[currentQuestion].correct){
 
-        score++;
+    score++;
 
-        document.getElementById("correctSound").play();
+    let sound = document.getElementById("correctSound");
+    sound.currentTime = 0;
+    sound.play();
 
-        alert("✅ ถูกต้อง!");
-
+    alert("✅ ถูกต้อง!");
     }else{
 
         wrong++;
 
-        document.getElementById("wrongSound").play();
+let sound = document.getElementById("wrongSound");
+sound.currentTime = 0;
+sound.play();
 
-        alert("❌ ผิด");
+alert("❌ ผิด");
 
     }
 
@@ -114,7 +117,9 @@ function checkAnswer(answer){
 
 function showResult(){
 
-    document.getElementById("finishSound").play();
+    let sound = document.getElementById("finishSound");
+sound.currentTime = 0;
+sound.play();
 
     document.getElementById("result").style.display="block";
 
