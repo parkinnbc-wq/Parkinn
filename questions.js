@@ -2,7 +2,7 @@ const questions = [
 
 {
 question:"จากภาพ คือการละเล่นอะไร?",
-image:"/images/1.jpg"
+image:"image/1.jpg"
 answers:[
 "รีรีข้าวสาร",
 "ว่าว",
@@ -14,7 +14,7 @@ correct:0
 
 {
 question:"เด็ก ๆ กำลังเล่นการละเล่นอะไร?",
-image:"/images/2.jpg"
+image:"image/2.jpg"
 answers:[
 "ชักเย่อ",
 "เดินกะลา",
@@ -26,7 +26,7 @@ correct:0
 
 {
 question:"ของเล่นไทยชนิดนี้เรียกว่าอะไร?",
-image:"/images/3.jpg"
+image:"image/3.jpg"
 answers:[
 "ว่าว",
 "โยนห่วง",
@@ -38,7 +38,7 @@ correct:0
 
 {
 question:"การเล่นที่ต้องกระโดดด้วยขาข้างเดียวคืออะไร?",
-image:"/images/4.jpg"
+image:"image/4.jpg"
 answers:[
 "กระต่ายขาเดียว",
 "รีรีข้าวสาร",
@@ -50,7 +50,7 @@ correct:0
 
 {
 question:"การละเล่นที่เด็กจับมือเป็นวงกลมร้องเพลงคืออะไร?",
-image:"/images/5.jpg"
+image:"image/5.jpg"
 answers:[
 "งูกินหาง",
 "ว่าว",
@@ -62,7 +62,7 @@ correct:0
 
 {
 question:"การเล่นที่ใช้แรงดึงเชือกสองฝ่ายเรียกว่าอะไร?",
-image:"/images/6.jpg"
+image:"image/6.jpg"
 answers:[
 "ชักเย่อ",
 "ตี่จับ",
@@ -74,7 +74,7 @@ correct:0
 
 {
 question:"การเล่นที่ใช้กะลามาทำเป็นรองเท้าคืออะไร?",
-image:"/images/7.jpg"
+image:"image/7.jpg"
 answers:[
 "เดินกะลา",
 "ว่าว",
@@ -86,7 +86,7 @@ correct:0
 
 {
 question:"การเล่นที่ใช้ผ้าซ่อนด้านหลังผู้เล่นคืออะไร?",
-image:"/images/8.jpg"
+image:"image/8.jpg"
 answers:[
 "มอญซ่อนผ้า",
 "งูกินหาง",
@@ -98,7 +98,7 @@ correct:0
 
 {
 question:"การเล่นที่ใช้ไม้หรือของเล่นหมุนได้คืออะไร?",
-image:"/images/9.jpg"
+image:"image/9.jpg"
 answers:[
 "ลูกข่าง",
 "ว่าว",
@@ -110,7 +110,7 @@ correct:0
 
 {
 question:"การละเล่นไทยช่วยให้เด็กมีอะไร?",
-image:"/images/10.jpg"
+image:"image/10.jpg"
 answers:[
 "สนุกและออกกำลังกาย",
 "นอนหลับทั้งวัน",
