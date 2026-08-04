@@ -77,48 +77,44 @@ document.getElementById("number").innerHTML=
 
 function checkAnswer(answer){
 
+    let sound;
+
     if(answer===questions[currentQuestion].correct){
 
-    score++;
+        score++;
 
-    let sound = document.getElementById("correctSound");
-sound.currentTime = 0;
-sound.play().catch(function(error){
-    console.log(error);
-});
+        sound = document.getElementById("correctSound");
 
-setTimeout(function(){
-    alert("✅ ถูกต้อง!");
-},300);
+        alert("✅ ถูกต้อง!");
+
     }else{
 
         wrong++;
 
-let sound = document.getElementById("wrongSound");
-sound.currentTime = 0;
-sound.play().catch(function(error){
-    console.log(error);
-});
+        sound = document.getElementById("wrongSound");
 
-setTimeout(function(){
-    alert("❌ ผิด");
-},300);
+        alert("❌ ผิด");
 
     }
 
+    sound.currentTime = 0;
+    sound.play();
 
-    currentQuestion++;
+    setTimeout(function(){
 
+        currentQuestion++;
 
-    if(currentQuestion < questions.length){
+        if(currentQuestion < questions.length){
 
-        showQuestion();
+            showQuestion();
 
-    }else{
+        }else{
 
-        showResult();
+            showResult();
 
-    }
+        }
+
+    },1000);
 
 }
 
