@@ -2,15 +2,18 @@ let team = "";
 
 function selectTeam(name){
     team = name;
+
+    document.getElementById("clickSound").play();
+
     alert("เลือก " + team + " แล้ว");
 }
-
 let currentQuestion = 0;
 let score = 0;
 let wrong = 0;
 
 function startGame(){
 
+    document.getElementById("clickSound").play();
     document.getElementById("menu").style.display="none";
     document.getElementById("quiz").style.display="block";
 
@@ -72,22 +75,23 @@ document.getElementById("number").innerHTML=
 
 
 
-function checkAnswer(answer){
+if(answer===questions[currentQuestion].correct){
 
-    if(answer===questions[currentQuestion].correct){
+    score++;
 
-        score++;
+    document.getElementById("correctSound").play();
 
-        alert("✅ ถูกต้อง!");
+    alert("✅ ถูกต้อง!");
 
-    }else{
+}else{
 
-        wrong++;
+    wrong++;
 
-        alert("❌ ผิด");
+    document.getElementById("wrongSound").play();
 
-    }
+    alert("❌ ผิด");
 
+}
 
     currentQuestion++;
 
@@ -108,9 +112,9 @@ function checkAnswer(answer){
 
 function showResult(){
 
+    document.getElementById("finishSound").play();
 
     document.getElementById("result").style.display="block";
-
 
    document.getElementById("finalScore").innerHTML =
 "คุณได้คะแนน "+score+" / "+questions.length+" คะแนน"+
