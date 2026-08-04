@@ -85,19 +85,17 @@ function checkAnswer(answer){
 
         sound = document.getElementById("correctSound");
 
-        alert("✅ ถูกต้อง!");
-
     }else{
 
         wrong++;
 
         sound = document.getElementById("wrongSound");
 
-        alert("❌ ผิด");
-
     }
 
+    sound.pause();
     sound.currentTime = 0;
+
     sound.play();
 
     setTimeout(function(){
@@ -114,10 +112,9 @@ function checkAnswer(answer){
 
         }
 
-    },1000);
+    },1500);
 
 }
-
 
 function showResult(){
 
