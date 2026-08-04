@@ -50,7 +50,11 @@ function showQuestion(){
 
 
     document.getElementById("score").innerHTML=
-    "คะแนน ⭐ "+score;
+"⭐ "+score+" คะแนน";
+
+
+document.getElementById("number").innerHTML=
+"ข้อ "+(currentQuestion+1)+" / "+questions.length;
 
 }
 
