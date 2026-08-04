@@ -116,9 +116,9 @@ function showResult(){
 
     document.getElementById("result").style.display="block";
 
-   document.getElementById("finalScore").innerHTML =
-"คุณได้คะแนน "+score+" / "+questions.length+" คะแนน"+
-"<br>✅ ถูก "+score+" ข้อ"+
-"<br>❌ ผิด "+wrong+" ข้อ";
+    document.getElementById("finalScore").innerHTML =
+    "คุณได้คะแนน "+score+" / "+questions.length+" คะแนน"+
+    "<br>✅ ถูก "+score+" ข้อ"+
+    "<br>❌ ผิด "+wrong+" ข้อ";
 
 }
