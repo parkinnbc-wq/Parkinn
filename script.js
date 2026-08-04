@@ -1,77 +1,105 @@
 let currentQuestion = 0;
 let score = 0;
+let wrong = 0;
 
-function startGame() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("quiz").style.display = "block";
+function startGame(){
+
+    document.getElementById("home").style.display="none";
+    document.getElementById("quiz").style.display="block";
+
     showQuestion();
 }
 
-function showQuestion() {
 
-    const q = questions[currentQuestion];
+function showQuestion(){
+
+    let q = questions[currentQuestion];
 
     document.getElementById("question").innerHTML =
-        "ข้อ " + (currentQuestion + 1) + " : " + q.question;
+    "ข้อ "+(currentQuestion+1)+"/"+questions.length+
+    "<br>"+q.question;
 
-    document.getElementById("questionImage").src = q.image;
 
-    const answers = document.getElementById("answers");
-    answers.innerHTML = "";
+    document.getElementById("questionImage").src=q.image;
 
-    q.answers.forEach((answer, index) => {
 
-        const btn = document.createElement("button");
+    let answerBox=document.getElementById("answers");
 
-        btn.className = "answerBtn";
+    answerBox.innerHTML="";
 
-        btn.innerHTML = answer;
 
-        btn.onclick = () => checkAnswer(index);
+    q.answers.forEach(function(answer,index){
 
-        answers.appendChild(btn);
+        let btn=document.createElement("button");
+
+        btn.className="answerBtn";
+
+        btn.innerHTML=answer;
+
+
+        btn.onclick=function(){
+
+            checkAnswer(index);
+
+        };
+
+
+        answerBox.appendChild(btn);
 
     });
 
-    document.getElementById("score").innerHTML =
-        "คะแนน : " + score;
+
+    document.getElementById("score").innerHTML=
+    "คะแนน ⭐ "+score;
+
 }
 
-function checkAnswer(index){
 
-    if(index===questions[currentQuestion].correct){
+
+function checkAnswer(answer){
+
+    if(answer===questions[currentQuestion].correct){
 
         score++;
 
-        alert("✅ ตอบถูก");
+        alert("✅ ถูกต้อง!");
 
     }else{
 
-        alert("❌ ตอบผิด");
+        wrong++;
+
+        alert("❌ ผิด");
 
     }
 
+
     currentQuestion++;
 
-    if(currentQuestion<questions.length){
+
+    if(currentQuestion < questions.length){
 
         showQuestion();
 
     }else{
 
-        finishGame();
+        showResult();
 
     }
 
 }
 
-function finishGame(){
+
+
+function showResult(){
 
     document.getElementById("quiz").style.display="none";
 
     document.getElementById("result").style.display="block";
 
+
     document.getElementById("finalScore").innerHTML=
-    "คุณได้ "+score+" / "+questions.length+" คะแนน";
+    "ได้คะแนน "+score+" / "+questions.length+
+    "<br>✅ ถูก "+score+" ข้อ"+
+    "<br>❌ ผิด "+wrong+" ข้อ";
 
 }
