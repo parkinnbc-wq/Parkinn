@@ -20,7 +20,8 @@ function showQuestion(){
     "<br>"+q.question;
 
 
-    document.getElementById("questionImage").src=q.image;
+    document.getElementById("questionImage").src =
+questions[currentQuestion].image;
 
 
     let answerBox=document.getElementById("answers");
