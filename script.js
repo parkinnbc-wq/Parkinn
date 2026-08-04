@@ -82,10 +82,10 @@ function checkAnswer(answer){
     score++;
 
     let sound = document.getElementById("correctSound");
-    sound.currentTime = 0;
-    sound.play();
-
-    sound.play();
+sound.currentTime = 0;
+sound.play().catch(function(error){
+    console.log(error);
+});
 
 setTimeout(function(){
     alert("✅ ถูกต้อง!");
@@ -96,7 +96,9 @@ setTimeout(function(){
 
 let sound = document.getElementById("wrongSound");
 sound.currentTime = 0;
-sound.play();
+sound.play().catch(function(error){
+    console.log(error);
+});
 
 setTimeout(function(){
     alert("❌ ผิด");
@@ -125,7 +127,9 @@ function showResult(){
 
     let sound = document.getElementById("finishSound");
 sound.currentTime = 0;
-sound.play();
+sound.play().catch(function(error){
+    console.log(error);
+});
 
     document.getElementById("result").style.display="block";
 
