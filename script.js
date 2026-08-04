@@ -108,15 +108,13 @@ function checkAnswer(answer){
 
 function showResult(){
 
-    document.getElementById("finalScore").innerHTML =
-"คุณได้ "+score+" / "+questions.length+" คะแนน";
 
     document.getElementById("result").style.display="block";
 
 
    document.getElementById("finalScore").innerHTML =
-"คุณได้คะแนน "+score+" / "+questions.length+" คะแนน";
-    "<br>✅ ถูก "+score+" ข้อ"+
-    "<br>❌ ผิด "+wrong+" ข้อ";
+"คุณได้คะแนน "+score+" / "+questions.length+" คะแนน"+
+"<br>✅ ถูก "+score+" ข้อ"+
+"<br>❌ ผิด "+wrong+" ข้อ";
 
 }
