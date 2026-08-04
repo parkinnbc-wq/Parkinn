@@ -1,4 +1,4 @@
-llet team = "";
+let team = "";
 
 function selectTeam(name){
     team = name;
