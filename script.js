@@ -11,12 +11,14 @@ let wrong = 0;
 
 function startGame(){
 
-    document.getElementById("home").style.display="none";
-    document.getElementById("quiz").style.display="block";
+    document.getElementById("menu").style.display="none";
+    document.getElementById("game").style.display="block";
+
+    currentQuestion = 0;
+    score = 0;
 
     showQuestion();
 }
-
 
 function showQuestion(){
 
