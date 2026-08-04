@@ -82,3 +82,10 @@ button:hover{
     padding:30px;
     border-radius:25px;
 }
+.cover{
+    width:500px;
+    max-width:90%;
+    border-radius:25px;
+    border:8px solid #ffd54f;
+    margin:20px;
+}
