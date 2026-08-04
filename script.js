@@ -85,7 +85,11 @@ function checkAnswer(answer){
     sound.currentTime = 0;
     sound.play();
 
+    sound.play();
+
+setTimeout(function(){
     alert("✅ ถูกต้อง!");
+},300);
     }else{
 
         wrong++;
@@ -94,7 +98,9 @@ let sound = document.getElementById("wrongSound");
 sound.currentTime = 0;
 sound.play();
 
-alert("❌ ผิด");
+setTimeout(function(){
+    alert("❌ ผิด");
+},300);
 
     }
 
