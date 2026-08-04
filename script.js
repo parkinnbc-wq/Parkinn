@@ -118,16 +118,38 @@ function checkAnswer(answer){
 function showResult(){
 
     let sound = document.getElementById("finishSound");
-sound.currentTime = 0;
-sound.play().catch(function(error){
-    console.log(error);
-});
+    sound.currentTime = 0;
+    sound.play();
+
 
     document.getElementById("result").style.display="block";
 
+
+    document.getElementById("teamName").innerHTML =
+    "🐘 ทีมของคุณ: " + team;
+
+
     document.getElementById("finalScore").innerHTML =
-    "คุณได้คะแนน "+score+" / "+questions.length+" คะแนน"+
-    "<br>✅ ถูก "+score+" ข้อ"+
-    "<br>❌ ผิด "+wrong+" ข้อ";
+    "คุณได้คะแนน "+score+" / "+questions.length+" คะแนน";
+
+
+    let message = "";
+
+    if(score === questions.length){
+
+        message = "🎉 เก่งมาก!";
+
+    }else if(score >= 7){
+
+        message = "👏 เยี่ยม!";
+
+    }else{
+
+        message = "💪 ลองอีกครั้งนะ";
+
+    }
+
+
+    document.getElementById("message").innerHTML = message;
 
 }
