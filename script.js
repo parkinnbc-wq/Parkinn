@@ -1,3 +1,9 @@
+let team = "";
+
+function selectTeam(name){
+    team = name;
+    alert("เลือก "+team+" แล้ว!");
+}
 let currentQuestion = 0;
 let score = 0;
 let wrong = 0;
