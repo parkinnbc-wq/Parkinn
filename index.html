@@ -15,21 +15,35 @@
 
 <div class="container">
 
-<h1>
-🌸 เกมทดสอบความรู้<br>
-การละเล่นแบบไทย 🇹🇭
-</h1>
+<div id="menu">
 
-<img class="cover"
-src="https://picsum.photos/500/250"
-alt="ภาพการละเล่นไทย">
+<h1>🇹🇭 เกมการละเล่นไทย</h1>
 
-<h3>สำหรับเด็กอายุ 4-6 ปี</h3>
+<p>เลือกทีมของคุณ</p>
 
-<div id="home">
+<div class="characters">
 
-<button onclick="startGame()">เริ่มเล่น</button>
+<button onclick="selectTeam('ทีมช้าง')">
+🐘 ทีมช้าง
+</button>
 
+<button onclick="selectTeam('ทีมไก่')">
+🐔 ทีมไก่
+</button>
+
+<button onclick="selectTeam('ทีมกระต่าย')">
+🐰 ทีมกระต่าย
+</button>
+
+</div>
+
+<br>
+
+<button onclick="startGame()">
+🎮 เริ่มเล่น
+</button>
+
+</div>
 </div>
 
 <div id="quiz" style="display:none;">
