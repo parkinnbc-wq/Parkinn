@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เกมการละเล่นแบบไทย</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎮 เกมการละเล่นแบบไทย</h1>
+
+<h3>สำหรับเด็กอายุ 4-6 ปี</h3>
+
+<div id="home">
+
+<button onclick="startGame()">เริ่มเล่น</button>
+
+</div>
+
+<div id="quiz" style="display:none;">
+
+<h2 id="question"></h2>
+
+<img id="questionImage" src="" alt="รูปภาพ">
+
+<div id="answers"></div>
+
+<p id="score"></p>
+
+</div>
+
+<div id="result" style="display:none;">
+
+<h1>สรุปผลคะแนน</h1>
+
+<h2 id="finalScore"></h2>
+
+<button onclick="location.reload()">เล่นอีกครั้ง</button>
+
+</div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
