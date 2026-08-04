@@ -98,7 +98,8 @@ function checkAnswer(answer){
 
 function showResult(){
 
-    document.getElementById("quiz").style.display="none";
+    document.getElementById("finalScore").innerHTML =
+"คุณได้ "+score+" / "+questions.length+" คะแนน";
 
     document.getElementById("result").style.display="block";
 
