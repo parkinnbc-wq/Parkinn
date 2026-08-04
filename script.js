@@ -14,6 +14,7 @@ function startGame(){
 function showQuestion(){
 
     let q = questions[currentQuestion];
+console.log(q);
 
     document.getElementById("question").innerHTML =
     "ข้อ "+(currentQuestion+1)+"/"+questions.length+
